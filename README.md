@@ -1,16 +1,3 @@
----
-title: Configure and deploy models on Kubeflow
-categories: projects
-author: Paddy
-excerpt: How to Configure Kubeflow on AWS EC2 and Deploy a Complete Model Inference Service on KServe in 2024 [Step-by-Step Guide]
-toc: true
-layout: post
-tags: ['PROJECTS','Conda','DL','ML','CICD','AWS','EC2','EKS','Docker','K8s','End-to-End','MLOps','Kubeflow','Bash','Python','Git','MinIO','Kserve','kfp','argo','Tekton']
-permalink: /Projects/Config_Kubeflow/
-date: '2024-10-2'
-updated: '2024-10-24'
----
-
 ## Introduction
 
 This blog is mainly on how to deploy Kubeflow on AWS EC2 and create model inference services in Kubeflow. Since some of the tutorials available online seem to be outdated, and it's common to encounter unexpected and challenging bugs during implementation. This blog will also share some of the pitfalls I've encountered, along with solutions for future reviewing and reference.
@@ -2054,16 +2041,27 @@ using RabbitMQ or Kafka message queue suitable for high concurrency scenarios wh
 ## Conclusion
 
 We have finished:
+
 • Create and Configure EC2 instance in AWS console dashboard
+
 • Connect and access your EC2 instance
+
 • Install basic tools (apt, conda, kubeflow-manifests repo etc)
+
 • Configure AWS credentials, regions and deploy AWS EKS cluster, node-group
+
 • Install Kubeflow Pods required
+
 • Connect the Kubeflow Dashboard
+
 • Connect the Kubeflow Notebooks Server
+
 • Setup MinIO for Object Storage
+
 • Setting up MinIO secret for Kserve for inference service
+
 • Deploy models on Kserve inference services
+
 
 ## References
 
